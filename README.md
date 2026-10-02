@@ -58,7 +58,7 @@ keep it local, do not commit or share it.
 Clone into the project's skills directory; the repo root is the skill:
 
 ```
-git clone https://github.com/<you>/retro-skill .claude/skills/retro
+git clone https://github.com/rain-pos/retro-skill .claude/skills/retro
 ```
 
 Then open `project.md` and fill in what your project has: where reports and the ledger go
