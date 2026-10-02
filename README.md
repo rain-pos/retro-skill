@@ -67,6 +67,15 @@ to hand findings to, model conventions, house rules for instruction files. Every
 empty takes the default from SKILL.md, step 0. Keep the skill manual: do not wire it to a
 hook or to the end of another skill.
 
+A filled adapter looks like this (three of the eight lines changed, the rest left at
+"none"):
+
+```markdown
+- **Artifacts directory:** `docs/retros/` (git-ignored)
+- **Knowledge hand-off:** offer `/lessons add` for a finding about how a skill or agent behaves. Offer only.
+- **Model conventions:** Sonnet for exploration and mechanical steps (grep, inventory, lint, tests); Opus for implementation, review, synthesis. An agent without `model:` inherits the session model; flag that only when the job was mechanical.
+```
+
 Requirements: Claude Code 2.1 or newer and Python 3.9+ (stdlib only). The analyzer reads
 the local transcript files Claude Code writes under `~/.claude/projects/`; the format is
 undocumented and was checked against version 2.1.x. If it changes, the analyzer prints a
